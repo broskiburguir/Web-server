@@ -13,6 +13,8 @@ const publicDirectory = path.join(__dirname, '../public')
 
 app.use(express.static(publicDirectory, { extensions: ['html'] }))
 
+// create html page for about
+
 app.get('', (req, res) => {
   res.send('<h1>Weather<h1>')
 })
