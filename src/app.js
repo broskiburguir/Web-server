@@ -14,7 +14,6 @@ const publicDirectory = path.join(__dirname, '../public')
 app.set('view engine', 'hbs')
 app.use(express.static(publicDirectory, { extensions: ['html'] }))
 
-
 app.get('', (req, res) => {
   res.send('<h1>Weather<h1>')
 })
